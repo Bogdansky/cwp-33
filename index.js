@@ -58,7 +58,7 @@ app.set('port', (process.env.PORT || 4000));
 
 //For avoidong Heroku $PORT error
 app.get('/', function(request, response) {
-    var result = 'App is running'
+    var result = 'App is running. Hello !'
     response.send(result);
 }).listen(app.get('port'), function() {
     console.log('App is running, server is listening on port ', app.get('port'));
